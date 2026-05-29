@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SOON</title>
+
+<style>
+
+body{
+margin:0;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:#080010;
+font-family:Arial;
+overflow:hidden;
+color:white;
+}
+
+.bg{
+position:absolute;
+width:100%;
+height:100%;
+background:
+linear-gradient(to bottom,#180030,#05010d);
+}
+
+.sun{
+position:absolute;
+top:15%;
+width:250px;
+height:250px;
+border-radius:50%;
+background:
+linear-gradient(#ffdd00,#ff00aa);
+box-shadow:
+0 0 40px #ff00aa,
+0 0 100px #ff00aa;
+}
+
+.content{
+position:relative;
+z-index:5;
+text-align:center;
+}
+
+h1{
+font-size:80px;
+letter-spacing:10px;
+color:#ff44cc;
+text-shadow:
+0 0 20px #ff00aa;
+margin:0;
+}
+
+p{
+letter-spacing:4px;
+color:#cccccc;
+}
+
+a{
+display:inline-block;
+margin-top:30px;
+color:#00ffff;
+text-decoration:none;
+}
+
+.grid{
+position:absolute;
+bottom:-70%;
+width:200%;
+height:200%;
+
+background-image:
+linear-gradient(#ff00ff33 1px,transparent 1px),
+linear-gradient(90deg,#ff00ff33 1px,transparent 1px);
+
+background-size:60px 60px;
+
+transform:
+perspective(600px)
+rotateX(80deg);
+
+animation:move 10s linear infinite;
+}
+
+@keyframes move{
+
+from{
+transform:
+perspective(600px)
+rotateX(80deg)
+translateY(0);
+}
+
+to{
+transform:
+perspective(600px)
+rotateX(80deg)
+translateY(60px);
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="bg"></div>
+<div class="sun"></div>
+<div class="grid"></div>
+
+<div class="content">
+
+<h1>SOON</h1>
+
+<p>THE NIGHT REMEMBERS</p>
+
+<a href="mailto:hello@synthwave.ir">
+hello@synthwave.ir
+</a>
+
+</div>
+
+</body>
+</html>
